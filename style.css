@@ -340,7 +340,11 @@ article.box p:last-child{
 
     #competences{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+    }
+
+    #competences div h3{
+    font-size: 0.8rem;
     }
 
     #formation{
@@ -355,6 +359,7 @@ article.box p:last-child{
         max-width: 85%;
         min-width: min-content;
         /* white-space: nowrap; */
+        width: 75%;
     }
 
     .diplome h3{
