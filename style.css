@@ -19,7 +19,7 @@ html, body{
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    font-size: calc(16px + 0.4vw);
+    font-size: calc(16px + 0.35vw);
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
@@ -78,7 +78,7 @@ nav a:hover{
 }
 
 .profil{
-    min-height: 100vh;
+    height: 100vh;
     background-image: linear-gradient(
         to right,
         hsl(0, 0%, 0%) 0%,
@@ -106,7 +106,7 @@ nav a:hover{
 
 
 h1{
-    font-size: 8vh;
+    font-size: 5rem;
     font-family: 'Rubik', sans-serif;
     padding-bottom: 1rem;
     padding-left: 1rem;
@@ -115,7 +115,7 @@ h1{
 }
 
 h2{
-    font-size: 5vh;
+    font-size: 2.5rem;
     color: white;
     font-family: 'Source Code Pro', monospace;
     animation-duration: 0.75s;
@@ -181,6 +181,7 @@ h2:nth-of-type(3){
     rgb(42, 45, 68) -4.3%,
     rgb(65, 71, 108) 102.1% );
     align-items: center;
+    padding-top: 4vh;
 
 }
 
@@ -210,6 +211,7 @@ h2:nth-of-type(3){
 
 .diplome{
     /* white-space: nowrap; */
+    width: 40%;
     max-width: 50%;
     flex-basis: 40%;
     margin: auto;
@@ -235,8 +237,8 @@ h2:nth-of-type(3){
     align-content: space-around;
     align-items: flex-end;
     width: 100vw;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    padding-top: 2vh;
+    /* padding-bottom: 5vh; */
     background-image: linear-gradient(to top, #09203f 0%,
     #537895 100%);
 }
@@ -245,13 +247,13 @@ h2:nth-of-type(3){
     /* margin: auto; */
     text-align: center;
     font-family: 'Rubik', sans-serif;
-    font-size: 2vh;
+    font-size: 1.2rem;
     width: 25%;
 }
 
 
 #experiences{
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -263,7 +265,7 @@ h2:nth-of-type(3){
 }
 
 
-article.box{
+#experiences article.box{
     display: flex;
     flex-direction: column;
     /* flex-basis: 20vw; */
@@ -274,31 +276,34 @@ article.box{
     padding: 0.25rem 0.25rem;
     flex: 1 1 500px;
     background-color: whitesmoke;
-    margin: 0.5vh 1vh;
-    max-width: 450px;    
+    margin: 0.1vh 0.1vw;
+    max-width: 425px;    
 }
 
 
-article.box h3{
+#experiences article.box h3{
     font-family: 'Rubik', sans-serif;
-    font-size: 1.1rem;
-    padding: 0.5vw;
+    font-size: 1rem;
+    padding: 0.1vw 0;
+    margin : 0;
 }
 
-article.box h4{
+#experiences article.box h4{
     font-family: 'Roboto Mono', monospace;
-    font-size: 0.9rem;
-    padding: 0.5vw;
+    font-size: 0.8rem;
+    padding: 0.1vw 0;
+    margin : 0;
 }
 
-article.box p{
+#experiences article.box p{
     font-family: 'Source Code Pro', monospace;
-    font-size: 0.9rem;
-    padding: 0.5vw;
+    font-size: 0.8rem;
+    padding: 0.1vw 0;
+    margin : 0;
 }
 
-article.box p:last-child{
-    font-size: 0.85rem;
+#experiences article.box p:last-child{
+    font-size: 0.75rem;
     margin-top: auto;
 }
 
@@ -352,6 +357,7 @@ article.box p:last-child{
     }
 
     #formation .diplome{
+        width: 80%;
         max-width: 85%;
         min-width: min-content;
         /* white-space: nowrap; */
@@ -361,6 +367,22 @@ article.box p:last-child{
         font-size: 15px;
     }
 
+    /* #experiences{
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+    }
+
+    #experiences article.box{
+        display: flex;
+        flex-direction: column;
+        overflow-wrap: break-word;
+        padding: 0.25rem 0.25rem;
+        flex: 1 0 80%;
+        background-color: whitesmoke;
+        margin: 0.1vh;
+        font-size: 15px;
+    } */
 
 
    #contact{
