@@ -11,22 +11,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Rubik:wght@500&family=Source+Code+Pro:ital,wght@1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
     <title>Vincent Prat</title>
 </head>
 <body>
     <header>
     </header>
     <main>
-        <nav>
+        <nav class="nav">
             <div class="share">
                 <a href="https://github.com/vincentprat" class="fab fa-github" target="_blank" title="Github Vincent Prat"></a>
                 <a href="https://twitter.com/vprat" class="fab fa-twitter" target="_blank" title="Twitter Vincent Prat"></a>
                 <a href="https://www.linkedin.com/in/vincentprat33/" class="fab fa-linkedin" target="_blank" title="Linkedin Vincent Prat"></a>
             </div>
-            <a href="#formation">Formation</a>
-            <a href="#competences">Compétences</a>
-            <a href="#experiences">Expériences</a>
-            <a href="#contact">Contact</a>
+            <a class="hide" href="#formation">Formation</a>
+            <a class="hide" href="#competences">Compétences</a>
+            <a class="hide" href="#experiences">Expériences</a>
+            <a class="hide" href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="menu()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
         <section class="profil">
             <div class="bloc">
