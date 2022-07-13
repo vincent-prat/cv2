@@ -1,7 +1,7 @@
-function myFunction() {
+function menu() {
     var x = document.getElementsByTagName("nav");
     if (x.className === "nav") {
-      x.className += "responsive";
+      x.className += " responsive";
     } else {
       x.className = "nav";
     }

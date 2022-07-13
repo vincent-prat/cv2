@@ -66,7 +66,7 @@ nav a{
 }
 
 nav .icon {
-    display: none;
+    /* display: none; */
 }
 
 nav a:hover{
@@ -364,6 +364,7 @@ article.box p:last-child{
 
     nav{
         font-size: 1rem;
+        justify-content: space-between;
     }
 
     nav a.hide{
@@ -374,6 +375,7 @@ article.box p:last-child{
     }
 
     nav.responsive a.icon{
+        display: block;
         position: absolute;
         right: 0;
         top: 0;
